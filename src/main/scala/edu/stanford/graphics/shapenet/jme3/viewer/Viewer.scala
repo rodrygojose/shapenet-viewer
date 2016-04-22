@@ -895,34 +895,52 @@ class Viewer(val config: ViewerConfig = ViewerConfig()) extends SimpleApplicatio
 */
 	//---------------------------------------------------------------------------------------------
 
+	val ten_degrees = (math.Pi/18).toFloat;
+	val nAzimuthOrientations = 36;
+ 
+	// 0 degrees
 	val cameraPositionOptions_0 = new CameraPositionOptions(
 	    cameraPositioningStrategy = config.cameraPositionStrategy,
-	    cameraAngleFromHorizontal = Option(0.0F),
-	    startRotation = Option(config.cameraStartOrientation),
+	    cameraAngleFromHorizontal = Option( 0*ten_degrees ),
+	    startRotation = Option( 0.0F ),
 	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
 	)
 
-	val camPosGen_0 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_0, nPositions = 8)
+	val camPosGen_0 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_0, nPositions = nAzimuthOrientations)
 
+	// 10 degrees
 	val cameraPositionOptions_10 = new CameraPositionOptions(
 	    cameraPositioningStrategy = config.cameraPositionStrategy,
-	    cameraAngleFromHorizontal = Option(-10.0F),
-	    startRotation = Option(config.cameraStartOrientation),
+	    cameraAngleFromHorizontal = Option( 1*ten_degrees ),
+	    startRotation = Option( 0.0F ),
 	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
 	)
 
-	val camPosGen_10 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_10, nPositions = 8)
+	val camPosGen_10 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_10, nPositions = nAzimuthOrientations)
 
+	// 20 degrees
+	val cameraPositionOptions_20 = new CameraPositionOptions(
+	    cameraPositioningStrategy = config.cameraPositionStrategy,
+	    cameraAngleFromHorizontal = Option( 2*ten_degrees ),
+	    startRotation = Option( 0.0F ),
+	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
+	)
+
+	val camPosGen_20 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_20, nPositions = nAzimuthOrientations)
+
+
+	// 30 degrees
 	val cameraPositionOptions_30 = new CameraPositionOptions(
 	    cameraPositioningStrategy = config.cameraPositionStrategy,
-	    cameraAngleFromHorizontal = Option(-30.0F),
-	    startRotation = Option(config.cameraStartOrientation),
+	    cameraAngleFromHorizontal = Option( 3*ten_degrees),
+	    startRotation = Option( 0.0F ),
 	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
 	)
 
-	val camPosGen_30 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_30, nPositions = 8)
+	val camPosGen_30 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_30, nPositions = nAzimuthOrientations)
 
-	val cameraPositionGenerator = new CombinedCameraPositionGenerator(camPosGen_0, camPosGen_10, camPosGen_30)
+	// combine
+	val cameraPositionGenerator = new CombinedCameraPositionGenerator(camPosGen_0, camPosGen_10, camPosGen_20, camPosGen_30)
 
 	//---------------------------------------------------------------------------------------------
 

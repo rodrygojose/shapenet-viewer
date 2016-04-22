@@ -81,7 +81,9 @@ class ViewerConfig(config: Config) extends ConfigManager(config) {
   registerMutableBoolean("includeCanonicalViews", "Whether to include the 6 canonical views (left, right, top, bottom, front, back) for screenshots",
     x => includeCanonicalViews, s => includeCanonicalViews = s)
 
-  var cameraPositionStrategy = getStringOption("viewer.cameraPositionStrategy").map( x => CameraPositioningStrategy.withName(x) ).getOrElse(CameraPositioningStrategy.POSITION_TO_FIT)
+  //var cameraPositionStrategy = getStringOption("viewer.cameraPositionStrategy").map( x => CameraPositioningStrategy.withName(x) ).getOrElse(CameraPositioningStrategy.POSITION_TO_FIT)
+var cameraPositionStrategy = CameraPositioningStrategy.POSITION_TO_FIT;
+
   registerMutable[CameraPositioningStrategy.Value]("cameraPositionStrategy", "Select 'distance' or 'fit'",
     x => cameraPositionStrategy, s => cameraPositionStrategy =
       if (s == "distance") CameraPositioningStrategy.POSITION_BY_DISTANCE
