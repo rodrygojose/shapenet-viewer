@@ -35,21 +35,45 @@ object GenerateViewpoints extends App {
   cam.setLocation(new Vector3f(0.0F, 0.0F, 10.0F))
   cam.lookAt(new Vector3f(0.0F, 0.0F, 0.0F), Vector3f.UNIT_Y)
 
+/*
   val cameraPositionOptions = new CameraPositionOptions(
     cameraPositioningStrategy = config.cameraPositionStrategy,
     cameraAngleFromHorizontal = Option(config.cameraAngleFromHorizontal),
     startRotation = Option(config.cameraStartOrientation),
     distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
   )
-
+*/
+/*
   val cameraPositionGenerator = if (config.includeCanonicalViews) {
     // Create 6 canonical views + 8 views around at height xxx
     val camPosGen1 = CameraPositionGenerator.canonicalViewsToFit(cam)
     val camPosGen2 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions, nPositions = config.nImagesPerModel)
     new CombinedCameraPositionGenerator(camPosGen1, camPosGen2)
-  } else {
-    new RotatingCameraPositionGenerator(cam, cameraPositionOptions, nPositions = config.nImagesPerModel)
-  }
+  } else {	
+*/	
+	val cameraPositionOptions_0 = new CameraPositionOptions(
+	    cameraPositioningStrategy = config.cameraPositionStrategy,
+	    cameraAngleFromHorizontal = Option(10.0F),
+	    startRotation = Option(config.cameraStartOrientation),
+	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
+	)
+
+	//val camPosGen_0 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_0, nPositions = config.nImagesPerModel)
+	val camPosGen_0 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_0, nPositions = 16)
+
+	val cameraPositionOptions_10 = new CameraPositionOptions(
+	    cameraPositioningStrategy = config.cameraPositionStrategy,
+	    cameraAngleFromHorizontal = Option(30.0F),
+	    startRotation = Option(config.cameraStartOrientation),
+	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
+	)
+
+	//val camPosGen_10 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_10, nPositions = config.nImagesPerModel)
+	val camPosGen_10 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_10, nPositions = 16)
+
+	val cameraPositionGenerator = new CombinedCameraPositionGenerator(camPosGen_0, camPosGen_10)
+    	//new RotatingCameraPositionGenerator(cam, cameraPositionOptions, nPositions = config.nImagesPerModel)
+  //}
 
   // Load scene
   val jme = Jme()

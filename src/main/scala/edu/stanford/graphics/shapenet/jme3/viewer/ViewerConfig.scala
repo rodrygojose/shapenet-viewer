@@ -72,11 +72,12 @@ class ViewerConfig(config: Config) extends ConfigManager(config) {
     x => cameraStartOrientation, s => cameraStartOrientation = Math.toRadians(s.toFloat).toFloat )
 
   //Option((math.Pi/6).toFloat
-  var cameraAngleFromHorizontal = Math.toRadians(getFloat("viewer.cameraAngleFromHorizontal", (180.0/6.0).toFloat)).toFloat
+//  var cameraAngleFromHorizontal = Math.toRadians(getFloat("viewer.cameraAngleFromHorizontal", (180.0/6.0).toFloat)).toFloat
+  var cameraAngleFromHorizontal = Math.toRadians(getFloat("viewer.cameraAngleFromHorizontal", (45.0).toFloat)).toFloat
   registerMutable("cameraAngleFromHorizontal", "Angle from horizontal for camera",
     x => cameraAngleFromHorizontal, s => cameraAngleFromHorizontal = Math.toRadians(s.toFloat).toFloat )
 
-  var includeCanonicalViews = getBoolean("viewer.includeCanonicalViews", true)
+  var includeCanonicalViews = getBoolean("viewer.includeCanonicalViews", false)
   registerMutableBoolean("includeCanonicalViews", "Whether to include the 6 canonical views (left, right, top, bottom, front, back) for screenshots",
     x => includeCanonicalViews, s => includeCanonicalViews = s)
 

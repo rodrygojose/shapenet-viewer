@@ -877,22 +877,56 @@ class Viewer(val config: ViewerConfig = ViewerConfig()) extends SimpleApplicatio
       }
 
     }
-    val cameraPositionOptions = new CameraPositionOptions(
+    /*val cameraPositionOptions = new CameraPositionOptions(
       cameraPositioningStrategy = config.cameraPositionStrategy,
       cameraAngleFromHorizontal = Option(config.cameraAngleFromHorizontal),
       startRotation = Option(config.cameraStartOrientation),
       distanceFromObjectRatio = Option(defaultModelDistanceScale)
-    )
+    )*/
 
     val sceneImagesGen = new SceneImagesGenerator(this, randomize = config.randomizeModels, skipExisting = config.skipExisting, getOutputDirFn = getOuputDirFn)
+/*
     val cameraPositionGenerator = if (config.includeCanonicalViews) {
       // Create 6 canonical views + 8 views around at height xxx
       val camPosGen1 = CameraPositionGenerator.canonicalViewsToFit(this.getCamera)
       val camPosGen2 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions, nPositions = config.nImagesPerModel)
       new CombinedCameraPositionGenerator(camPosGen1, camPosGen2)
     } else {
-      new RotatingCameraPositionGenerator(cam, cameraPositionOptions, nPositions = config.nImagesPerModel)
-    }
+*/
+	//---------------------------------------------------------------------------------------------
+
+	val cameraPositionOptions_0 = new CameraPositionOptions(
+	    cameraPositioningStrategy = config.cameraPositionStrategy,
+	    cameraAngleFromHorizontal = Option(0.0F),
+	    startRotation = Option(config.cameraStartOrientation),
+	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
+	)
+
+	val camPosGen_0 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_0, nPositions = 8)
+
+	val cameraPositionOptions_10 = new CameraPositionOptions(
+	    cameraPositioningStrategy = config.cameraPositionStrategy,
+	    cameraAngleFromHorizontal = Option(-10.0F),
+	    startRotation = Option(config.cameraStartOrientation),
+	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
+	)
+
+	val camPosGen_10 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_10, nPositions = 8)
+
+	val cameraPositionOptions_30 = new CameraPositionOptions(
+	    cameraPositioningStrategy = config.cameraPositionStrategy,
+	    cameraAngleFromHorizontal = Option(-30.0F),
+	    startRotation = Option(config.cameraStartOrientation),
+	    distanceFromObjectRatio = Option(config.defaultModelDistanceScale)
+	)
+
+	val camPosGen_30 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_30, nPositions = 8)
+
+	val cameraPositionGenerator = new CombinedCameraPositionGenerator(camPosGen_0, camPosGen_10, camPosGen_30)
+
+	//---------------------------------------------------------------------------------------------
+
+  //  }
     sceneImagesGen.configCameraPositions(cameraPositionGenerator)
     sceneImagesGen.process(modelIds, outputDir.getOrElse(screenShotDir + "models" + File.separator))
   }

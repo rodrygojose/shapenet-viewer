@@ -1,12 +1,19 @@
 SBT=bin/sbt
 
 # check if on jenkins and setup some env variables
-ifdef WORKSPACE
-export DATA_DIR=$(WORKSPACE)/test/data
-export WORK_DIR=$(WORKSPACE)/work
+#ifdef WORKSPACE
+
+#def WORKSPACE
+#WORKSPACE = "/user/rortizca/home/workspace/useful_code/shapenet-viewer"
+
+export DATA_DIR=/user/rortizca/home/workspace/useful_code/shapenet-viewer/data/test
+export WORK_DIR=/user/rortizca/home/workspace/useful_code/shapenet-viewer/data/out
+#export DATA_DIR=$(WORKSPACE)/test/data
+#export WORK_DIR=$(WORKSPACE)/work
 $(info Setting DATA_DIR to $(DATA_DIR))  
 $(info Setting WORK_DIR to $(WORK_DIR))
-endif
+
+#endif
 
 .PHONY: default all sbt compile test clean package assembly deps
 
