@@ -928,7 +928,7 @@ class Viewer(val config: ViewerConfig = ViewerConfig()) extends SimpleApplicatio
 
 	val camPosGen_20 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_20, nPositions = nAzimuthOrientations)
 
-
+	/*
 	// 30 degrees
 	val cameraPositionOptions_30 = new CameraPositionOptions(
 	    cameraPositioningStrategy = config.cameraPositionStrategy,
@@ -938,9 +938,11 @@ class Viewer(val config: ViewerConfig = ViewerConfig()) extends SimpleApplicatio
 	)
 
 	val camPosGen_30 = new RotatingCameraPositionGenerator(cam, cameraPositionOptions_30, nPositions = nAzimuthOrientations)
+	*/
 
 	// combine
-	val cameraPositionGenerator = new CombinedCameraPositionGenerator(camPosGen_0, camPosGen_10, camPosGen_20, camPosGen_30)
+	//val cameraPositionGenerator = new CombinedCameraPositionGenerator(camPosGen_0, camPosGen_10, camPosGen_20, camPosGen_30)
+	val cameraPositionGenerator = new CombinedCameraPositionGenerator(camPosGen_0, camPosGen_10, camPosGen_20)
 
 	//---------------------------------------------------------------------------------------------
 

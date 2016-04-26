@@ -1,0 +1,993 @@
+Script started on Wed 06 Apr 2016 04:06:50 PM CEST
+bash-4.3$ ddsd^[d[dDdsds[Dsds[Dsd[CdDsddDsddDsd[C[C[C[K[K[K[K[K[K[K[K[K[K[K[Kdd[K[K./viw[Kw[Ke[K[K[K[K[Kls
+assembly.sbt  bin	 config   Makefile  README.md  src     typescript
+assets	      build.sbt  LICENSE  project   scripts    target
+bash-4.3$ pdw
+bash: pdw: command not found
+bash-4.3$ pwd
+/home/rortizca/workspace/useful_code/shapenet-viewer
+bash-4.3$ cd view[K[K[K[Kscripts/
+bash-4.3$ ./s[Kviewer.sh 
+Wed Apr  6 16:07:38 CEST 2016
+Using conf ./../config/viewer.conf
+Apr 06, 2016 4:07:38 PM com.jme3.system.JmeDesktopSystem initialize
+INFO: Running on jMonkeyEngine 3.0.10
+Apr 06, 2016 4:07:38 PM com.jme3.system.Natives extractNativeLibs
+INFO: Extraction Directory: /home/rortizca/workspace/useful_code/shapenet-viewer/scripts
+Apr 06, 2016 4:07:39 PM com.jme3.system.lwjgl.LwjglContext printContextInitInfo
+INFO: Lwjgl 2.9.0 context running on thread LWJGL Renderer Thread
+Apr 06, 2016 4:07:39 PM com.jme3.system.lwjgl.LwjglContext printContextInitInfo
+INFO: Adapter: null
+Apr 06, 2016 4:07:39 PM com.jme3.system.lwjgl.LwjglContext printContextInitInfo
+INFO: Driver Version: null
+Apr 06, 2016 4:07:39 PM com.jme3.system.lwjgl.LwjglContext printContextInitInfo
+INFO: Vendor: NVIDIA Corporation
+Apr 06, 2016 4:07:39 PM com.jme3.system.lwjgl.LwjglContext printContextInitInfo
+INFO: OpenGL Version: 4.5.0 NVIDIA 358.16
+Apr 06, 2016 4:07:39 PM com.jme3.system.lwjgl.LwjglContext printContextInitInfo
+INFO: Renderer: Quadro 4000M/PCIe/SSE2
+Apr 06, 2016 4:07:39 PM com.jme3.system.lwjgl.LwjglContext printContextInitInfo
+INFO: GLSL Ver: 4.50 NVIDIA
+Apr 06, 2016 4:07:39 PM com.jme3.asset.AssetConfig loadText
+WARNING: Cannot find loader com.jme3.audio.plugins.OGGLoader
+Apr 06, 2016 4:07:39 PM com.jme3.asset.AssetConfig loadText
+WARNING: Cannot find loader com.jme3.scene.plugins.blender.BlenderModelLoader
+Apr 06, 2016 4:07:39 PM com.jme3.audio.lwjgl.LwjglAudioRenderer initInThread
+INFO: Audio Device: OpenAL Soft
+Apr 06, 2016 4:07:39 PM com.jme3.audio.lwjgl.LwjglAudioRenderer initInThread
+INFO: Audio Vendor: OpenAL Community
+Apr 06, 2016 4:07:39 PM com.jme3.audio.lwjgl.LwjglAudioRenderer initInThread
+INFO: Audio Renderer: OpenAL Soft
+Apr 06, 2016 4:07:39 PM com.jme3.audio.lwjgl.LwjglAudioRenderer initInThread
+INFO: Audio Version: 1.1 ALSOFT 1.15.1
+Apr 06, 2016 4:07:39 PM com.jme3.audio.lwjgl.LwjglAudioRenderer initInThread
+INFO: AudioRenderer supports 64 channels
+Apr 06, 2016 4:07:39 PM com.jme3.audio.lwjgl.LwjglAudioRenderer initInThread
+INFO: Audio effect extension version: 1.0
+Apr 06, 2016 4:07:39 PM com.jme3.audio.lwjgl.LwjglAudioRenderer initInThread
+INFO: Audio max auxilary sends: 4
+16:07:39,787 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+16:07:39,787 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:07:39,787 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [jar:file:/home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer-assembly-0.1.0.jar!/logback.xml]
+16:07:39,796 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5c23a210 - URL [jar:file:/home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer-assembly-0.1.0.jar!/logback.xml] is not of type file
+16:07:39,864 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+16:07:39,868 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:07:39,872 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+16:07:39,984 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:07:39,989 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:18 - no applicable action for [withJansi], current ElementPath  is [[configuration][appender][encoder][withJansi]]
+16:07:40,006 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [edu.stanford.graphics.shapenet] to INFO
+16:07:40,006 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.jme3.util.TangentBinormalGenerator] to ERROR
+16:07:40,006 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+16:07:40,006 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+16:07:40,007 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+16:07:40,007 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@33a0499c - Registering current configuration as safe fallback point
+
+Apr 06, 2016 4:07:40 PM de.lessvoid.xml.tools.ClassHelper getInstance
+WARNING: class [edu.stanford.graphics.shapenet.viewer.ViewerController] could not be instantiated (java.lang.ClassNotFoundException: edu.stanford.graphics.shapenet.viewer.ViewerController)
+Apr 06, 2016 4:07:40 PM de.lessvoid.nifty.screen.Screen <init>
+WARNING: Missing ScreenController for screen [menu] using DefaultScreenController() instead but this might not be what you want.
+Apr 06, 2016 4:07:40 PM de.lessvoid.nifty.screen.Screen <init>
+WARNING: Missing ScreenController for screen [end] using DefaultScreenController() instead but this might not be what you want.
+
+16:07:40.259 [LWJGL Renderer Thread] [34mINFO [0;39m u.o.l.s.context.SysOutOverSLF4J - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
+16:07:40.261 [LWJGL Renderer Thread] [34mINFO [0;39m u.o.l.s.context.SysOutOverSLF4J - Redirected System.out and System.err to SLF4J for this context
+16:07:40.290 [LWJGL Renderer Thread] [31mWARN [0;39m com.jme3.input.InputManager - Attempted to add mapping "ScreenShot" twice to trigger.
+16:07:41.791 [pool-1-thread-1] [34mINFO [0;39m e.s.g.shapenet.jme3.JmeAssetCreator - load model 3dw.111cb08c8121b8411749672386e0b711 from http://shapenet.cs.stanford.edu/shapenet/data//1/1/1/c/b/08c8121b8411749672386e0b711/111cb08c8121b8411749672386e0b711/Collada/111cb08c8121b8411749672386e0b711.kmz
+16:07:43.563 [pool-1-thread-1] [34mINFO [0;39m jme3dae.collada14.ColladaDocumentV14 - ColladaParser v. 0.1
+16:07:43.608 [pool-1-thread-1] [1;31mERROR[0;39m com.jme3.asset.AssetKey - Asset path is outside assetmanager root
+16:07:43.610 [pool-1-thread-1] [31mWARN [0;39m com.jme3.asset.AssetManager - Cannot locate resource: ../images/texture0.jpg (Flipped)
+16:07:43.633 [pool-1-thread-1] [34mINFO [0;39m j.materials.FXBumpMaterialGenerator - Generating Material 
+16:07:43.642 [pool-1-thread-1] [34mINFO [0;39m j.materials.FXBumpMaterialGenerator - Generating Material 
+16:07:43.644 [pool-1-thread-1] [34mINFO [0;39m j.materials.FXBumpMaterialGenerator - Generating Material images/texture0.jpg
+16:07:43.644 [pool-1-thread-1] [34mINFO [0;39m j.materials.FXBumpMaterialGenerator - Generating Material 
+16:07:43.645 [pool-1-thread-1] [34mINFO [0;39m j.c.t.LibraryMaterialsTransformer - GOOGLEEARTH double sided attribute detected
+^C^C^CAL lib: (EE) alc_cleanup: 1 device not closed
+Wed Apr  6 16:11:39 CEST 2016
+bash-4.3$ ./viewer.sh [Kbash-4.3$ ./viewer.sh p[K[K[K[K[K[K[K[K[K[K[K[K[Kpdw[K[Kwd
+/home/rortizca/workspace/useful_code/shapenet-viewer/scripts
+bash-4.3$ cd ..
+bash-4.3$ ;s[K[Kls
+1a83a525ae32afcf622ac2f50deaba1f  assets     config    project	  src
+4dc0f5b4727412bc51a95aaa6caba1d3  bin	     LICENSE   README.md  target
+assembly.sbt			  build.sbt  Makefile  scripts	  typescript
+bash-4.3$ pwd
+/home/rortizca/workspace/useful_code/shapenet-viewer
+bash-4.3$ ls
+1a83a525ae32afcf622ac2f50deaba1f  assets     config    project	  src
+4dc0f5b4727412bc51a95aaa6caba1d3  bin	     LICENSE   README.md  target
+assembly.sbt			  build.sbt  Makefile  scripts	  typescript
+bash-4.3$ make
+bin/sbt package
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/classes...[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mPackaging /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer_2.11-0.1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 5 s, completed Apr 7, 2016 10:50:30 AM[0m
+bin/sbt assembly
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpclient-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-logging-1.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-desktop-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-api-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-core-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-io-2.5.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jbullet-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-natives-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding: shapenet-viewer_2.11-0.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpcore-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-ext-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stack-alloc-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: snakeyaml-1.12.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: eventbus-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpmime-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-plugins-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-lwjgl-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: vecmath-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-niftygui-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-effects-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jply-0.2.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-jbullet-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-terrain-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: zookeeper-3.4.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jinput-2.0.0-b01.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-default-controls-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: cal10n-api-0.8.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-parser-combinators_2.11-1.0.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-simple-1.1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-style-black-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: junit-4.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-classic-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-lang3-3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: hamcrest-core-1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jglfont-core-1.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-native_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stax2-api-3.1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xmlpull-xpp3-1.4.4c.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-core-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: log4j-over-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: concurrentlinkedhashmap-lru-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jul-to-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: woodstox-core-asl-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sysout-over-slf4j-1.0.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: noggit-0.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jansi-1.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-scalap_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-compress-1.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: paranamer-2.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-swing_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xz-1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sql2o-1.5.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-core_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-ast_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: solr-solrj-5.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-xml_2.11-1.0.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: opencsv-2.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-io-2.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: mysql-connector-java-5.1.36.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: dispatch-core_2.11-0.11.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-math3-3.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: async-http-client-1.8.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jopt-simple-4.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-arm_2.11-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: netty-3.9.2.Final.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-continuations-library_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slick_2.11-2.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jline-2.12.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: config-1.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.11.7.jar[0m
+[0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0minfo[0m] [0mMerging files...[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/DEPENDENCIES' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/INDEX.LIST' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux32/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux64/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/osx/libjansi.jnilib' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows32/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows64/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/asset/AssetKey.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/math/Transform.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Callback.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Library.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/PointerMath.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$2.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Attribute.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Color.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Erase.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$NoAnsi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderWriter.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer$Code.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiString.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/WindowsAnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/CLibrary.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$CONSOLE_SCREEN_BUFFER_INFO.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$COORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$INPUT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$KEY_EVENT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$SMALL_RECT.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/WindowsSupport.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/BaseDescription.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/BaseMatcher.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/CoreMatchers.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Description.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Factory.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Matcher.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/SelfDescribing.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/StringDescription.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/AllOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/AnyOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/DescribedAs.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/Is.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsAnything.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsEqual.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsInstanceOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsNot.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsNull.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsSame.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/ArrayIterator.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/SelfDescribingValue.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/SelfDescribingValueIterator.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 81 files[0m
+[0m[[33mwarn[0m] [0mStrategy 'first' was applied to 54 files[0m
+[0m[[0minfo[0m] [0mSHA-1: 4c4cc4e4f3037d836258e5174c021d781847bf92[0m
+[0m[[0minfo[0m] [0mPackaging /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer-assembly-0.1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 6 s, completed Apr 7, 2016 10:50:39 AM[0m
+bash-4.3$ make
+bin/sbt package
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/classes...[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mPackaging /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer_2.11-0.1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 5 s, completed Apr 7, 2016 11:16:34 AM[0m
+bin/sbt assembly
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jbullet-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpclient-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-desktop-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-api-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-ext-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-lwjgl-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: cal10n-api-0.8.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpcore-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-classic-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stack-alloc-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-logging-1.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-io-2.5.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: vecmath-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jinput-2.0.0-b01.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-niftygui-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: snakeyaml-1.12.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-core-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jply-0.2.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpmime-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-lang3-3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding: shapenet-viewer_2.11-0.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: concurrentlinkedhashmap-lru-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-natives-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: eventbus-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-simple-1.1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-core-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-default-controls-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-style-black-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jglfont-core-1.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xmlpull-xpp3-1.4.4c.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-parser-combinators_2.11-1.0.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: log4j-over-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jul-to-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: zookeeper-3.4.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sysout-over-slf4j-1.0.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-swing_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-scalap_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-plugins-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: paranamer-2.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sql2o-1.5.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: junit-4.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jansi-1.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: hamcrest-core-1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stax2-api-3.1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-effects-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-xml_2.11-1.0.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-jbullet-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: opencsv-2.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-compress-1.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: woodstox-core-asl-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-native_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: noggit-0.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xz-1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: mysql-connector-java-5.1.36.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-terrain-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: netty-3.9.2.Final.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-core_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: solr-solrj-5.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: dispatch-core_2.11-0.11.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jopt-simple-4.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-io-2.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-ast_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jline-2.12.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-arm_2.11-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-continuations-library_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: async-http-client-1.8.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-math3-3.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slick_2.11-2.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: config-1.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.11.7.jar[0m
+[0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0minfo[0m] [0mMerging files...[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/DEPENDENCIES' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/INDEX.LIST' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux32/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux64/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/osx/libjansi.jnilib' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows32/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows64/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/asset/AssetKey.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/math/Transform.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Callback.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Library.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/PointerMath.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$2.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Attribute.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Color.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Erase.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$NoAnsi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderWriter.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer$Code.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiString.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/WindowsAnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/CLibrary.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$CONSOLE_SCREEN_BUFFER_INFO.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$COORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$INPUT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$KEY_EVENT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$SMALL_RECT.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/WindowsSupport.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/BaseDescription.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/BaseMatcher.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/CoreMatchers.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Description.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Factory.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Matcher.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/SelfDescribing.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/StringDescription.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/AllOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/AnyOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/DescribedAs.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/Is.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsAnything.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsEqual.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsInstanceOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsNot.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsNull.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsSame.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/ArrayIterator.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/SelfDescribingValue.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/SelfDescribingValueIterator.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 81 files[0m
+[0m[[33mwarn[0m] [0mStrategy 'first' was applied to 54 files[0m
+[0m[[0minfo[0m] [0mSHA-1: 883f610130bedf94601d4b1e89200631e2792440[0m
+[0m[[0minfo[0m] [0mPackaging /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer-assembly-0.1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 5 s, completed Apr 7, 2016 11:16:43 AM[0m
+bash-4.3$ make
+bin/sbt package
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/classes...[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mPackaging /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer_2.11-0.1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 5 s, completed Apr 7, 2016 11:20:25 AM[0m
+bin/sbt assembly
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-logging-1.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-scalap_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-api-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-desktop-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-lwjgl-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-ext-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: paranamer-2.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: cal10n-api-0.8.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-classic-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-xml_2.11-1.0.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: opencsv-2.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-core-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding: shapenet-viewer_2.11-0.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpclient-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jbullet-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: log4j-over-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stack-alloc-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jul-to-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpcore-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sysout-over-slf4j-1.0.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: vecmath-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpmime-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jansi-1.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-niftygui-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-natives-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-style-black-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jglfont-core-1.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: eventbus-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-compress-1.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-io-2.5.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jply-0.2.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xz-1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-default-controls-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: snakeyaml-1.12.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-lang3-3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xmlpull-xpp3-1.4.4c.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-simple-1.1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: concurrentlinkedhashmap-lru-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sql2o-1.5.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-core-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: junit-4.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-math3-3.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-plugins-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jinput-2.0.0-b01.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-parser-combinators_2.11-1.0.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: zookeeper-3.4.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stax2-api-3.1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: solr-solrj-5.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-effects-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: hamcrest-core-1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-io-2.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-swing_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-jbullet-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-native_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jopt-simple-4.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-arm_2.11-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: mysql-connector-java-5.1.36.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: dispatch-core_2.11-0.11.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-continuations-library_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: netty-3.9.2.Final.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-core_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: async-http-client-1.8.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jline-2.12.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: woodstox-core-asl-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-ast_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: noggit-0.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-terrain-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slick_2.11-2.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: config-1.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.11.7.jar[0m
+[0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0minfo[0m] [0mMerging files...[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/DEPENDENCIES' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/INDEX.LIST' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux32/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux64/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/osx/libjansi.jnilib' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows32/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows64/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/asset/AssetKey.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/math/Transform.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Callback.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Library.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/PointerMath.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$2.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Attribute.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Color.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Erase.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$NoAnsi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderWriter.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer$Code.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiString.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/WindowsAnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/CLibrary.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$CONSOLE_SCREEN_BUFFER_INFO.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$COORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$INPUT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$KEY_EVENT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$SMALL_RECT.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/WindowsSupport.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/BaseDescription.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/BaseMatcher.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/CoreMatchers.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Description.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Factory.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/Matcher.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/SelfDescribing.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/StringDescription.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/AllOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/AnyOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/DescribedAs.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/Is.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsAnything.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsEqual.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsInstanceOf.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsNot.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsNull.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/core/IsSame.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/ArrayIterator.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/SelfDescribingValue.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/internal/SelfDescribingValueIterator.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 81 files[0m
+[0m[[33mwarn[0m] [0mStrategy 'first' was applied to 54 files[0m
+[0m[[0minfo[0m] [0mSHA-1: ecd4ea19a5752aba2424fdcf074258ac494beda4[0m
+[0m[[0minfo[0m] [0mPackaging /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer-assembly-0.1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 6 s, completed Apr 7, 2016 11:20:34 AM[0m
+bash-4.3$ make
+bin/sbt package
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/classes...[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mPackaging /home/rortizca/workspace/useful_code/shapenet-viewer/target/scala-2.11/shapenet-viewer_2.11-0.1.0.jar ...[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m
+[0m[[32msuccess[0m] [0mTotal time: 5 s, completed Apr 7, 2016 11:24:42 AM[0m
+bin/sbt assembly
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=256M; support was removed in 8.0
+[0m[[0minfo[0m] [0mLoading project definition from /home/rortizca/workspace/useful_code/shapenet-viewer/project[0m
+[0m[[0minfo[0m] [0mSet current project to shapenet-viewer (in build file:/home/rortizca/workspace/useful_code/shapenet-viewer/)[0m
+[0m[[33mwarn[0m] [0mMultiple main classes detected.  Run 'show discoveredMainClasses' to see the list[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-logging-1.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-api-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpclient-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-core-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-desktop-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-io-2.5.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-parser-combinators_2.11-1.0.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-plugins-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slf4j-ext-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jbullet-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-lwjgl-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stack-alloc-3.0.10-jme.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: snakeyaml-1.12.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpcore-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json-simple-1.1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding: shapenet-viewer_2.11-0.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-effects-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: cal10n-api-0.8.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: httpmime-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: junit-4.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-jbullet-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: hamcrest-core-1.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-terrain-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-native_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: vecmath-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jme3-niftygui-3.0.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: zookeeper-3.4.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-swing_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-scalap_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stax2-api-3.1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: paranamer-2.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-classic-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-default-controls-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: woodstox-core-asl-4.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-core_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: noggit-0.6.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: json4s-ast_2.11-3.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sql2o-1.5.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: logback-core-1.0.13.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: nifty-style-black-1.3.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-xml_2.11-1.0.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-compress-1.4.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jglfont-core-1.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xmlpull-xpp3-1.4.4c.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jinput-2.0.0-b01.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xz-1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: opencsv-2.3.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: mysql-connector-java-5.1.36.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: log4j-over-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: dispatch-core_2.11-0.11.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jul-to-slf4j-1.7.9.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: sysout-over-slf4j-1.0.2.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-math3-3.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jansi-1.8.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: async-http-client-1.8.10.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: lwjgl-natives-2.9.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jopt-simple-4.5.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: solr-solrj-5.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: eventbus-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-arm_2.11-1.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-continuations-library_2.11-1.0.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jply-0.2.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-io-2.4.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: netty-3.9.2.Final.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: commons-lang3-3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: jline-2.12.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: concurrentlinkedhashmap-lru-1.3.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: slick_2.11-2.1.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: config-1.3.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.11.7.jar[0m
+[0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
+[0m[[0minfo[0m] [0mMerging files...[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/DEPENDENCIES' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/INDEX.LIST' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.cal10n/cal10n-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-classic/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/ch.qos.logback/logback-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.cedarsoftware/json-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.googlecode.json-simple/json-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.ning/async-http-client/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/com.thoughtworks.paranamer/paranamer/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-io/commons-io/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/commons-logging/commons-logging/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/io.netty/netty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/jline/jline/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-default-controls/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty-style-black/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/lessvoid/nifty/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.jopt-simple/jopt-simple/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/net.sf.opencsv/opencsv/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-compress/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-lang3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.commons/commons-math3/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.apache.httpcomponents/httpmime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.bushe/eventbus/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.codehaus.woodstox/stax2-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.hawtjni/hawtjni-runtime/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi-native/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.fusesource.jansi/jansi/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.hamcrest/hamcrest-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.jglfont/jglfont-core/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.noggit/noggit/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/jul-to-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/log4j-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-api/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.slf4j/slf4j-ext/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.smurn/jply/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.sql2o/sql2o/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/org.yaml/snakeyaml/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.properties' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/maven/uk.org.lidalia/sysout-over-slf4j/pom.xml' with strategy 'discard'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux32/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/linux64/libjansi.so' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/osx/libjansi.jnilib' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows32/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'META-INF/native/windows64/jansi.dll' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/asset/AssetKey.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'com/jme3/math/Transform.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Callback.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/Library.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/hawtjni/runtime/PointerMath.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$2.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Attribute.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Color.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$Erase.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi$NoAnsi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/Ansi.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole$1.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiConsole.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderWriter.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer$Code.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiRenderer.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/AnsiString.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/WindowsAnsiOutputStream.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/CLibrary.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$CONSOLE_SCREEN_BUFFER_INFO.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$COORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$INPUT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$KEY_EVENT_RECORD.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32$SMALL_RECT.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/Kernel32.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/fusesource/jansi/internal/WindowsSupport.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'org/hamcrest/BaseDescription.class' with strategy 'first'[0m
+[0m[[33mwarn[0m] [0mMerging 'o

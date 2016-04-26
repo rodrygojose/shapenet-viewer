@@ -82,7 +82,7 @@ class ViewerConfig(config: Config) extends ConfigManager(config) {
     x => includeCanonicalViews, s => includeCanonicalViews = s)
 
   //var cameraPositionStrategy = getStringOption("viewer.cameraPositionStrategy").map( x => CameraPositioningStrategy.withName(x) ).getOrElse(CameraPositioningStrategy.POSITION_TO_FIT)
-var cameraPositionStrategy = CameraPositioningStrategy.POSITION_TO_FIT;
+var cameraPositionStrategy = CameraPositioningStrategy.POSITION_BY_DISTANCE;
 
   registerMutable[CameraPositioningStrategy.Value]("cameraPositionStrategy", "Select 'distance' or 'fit'",
     x => cameraPositionStrategy, s => cameraPositionStrategy =
