@@ -679,6 +679,11 @@ class Viewer(val config: ViewerConfig = ViewerConfig()) extends SimpleApplicatio
   }
 
   def loadModel(id: String, async: Boolean = asyncLoading, onloaded: () => _ = null, onerror: () => _ = null,  transform: Matrix4f = null) {
+
+	println("************************************************************************************************");
+	println("###################################### LOAD 1 ##################################################");		
+	println("************************************************************************************************");
+
     if (async) {
       if (state == ViewerState.READY) {
         val listener = new SceneLoadProgressListener(defaultModelDistanceScale, onloaded, onerror)
@@ -755,7 +760,8 @@ class Viewer(val config: ViewerConfig = ViewerConfig()) extends SimpleApplicatio
   }
 
   def load(id: String, async: Boolean = asyncLoading, onloaded: () => _ = null, onerror: () => _ = null) = {
-    loadModel(id, async, onloaded, onerror)
+    //loadModel(id, async, onloaded, onerror)
+	loadModel(id, false, onloaded, onerror)
   }
 
   def setCamera(c: CameraState) {

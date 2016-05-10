@@ -55,8 +55,19 @@ public class Main extends SimpleApplication {
   public static void main(String[] args) throws MalformedURLException, URISyntaxException {
     if (args != null && args.length > 0) {
       if (args[0].startsWith("file:")) {
+
+
+System.out.println("**************************************************************************");
+System.out.println(" ### 1");
+
         model = new File(new URL(args[0]).toURI()).toString();
+
       } else {
+
+
+System.out.println("**************************************************************************");
+System.out.println(" ### 2");
+
         model = new File(args[0]).toURI().toURL().toString();
       }
       modelParent = new File(args[0]).getParentFile().toURI().toURL().toString();
@@ -64,6 +75,11 @@ public class Main extends SimpleApplication {
       main.setShowSettings(false);
       main.start();
     } else {
+
+
+System.out.println("**************************************************************************");
+System.out.println(" ### 3");
+
       System.out.println("Usage: java -jar jme3dae.jar modelFileToLoad");
     }
   }

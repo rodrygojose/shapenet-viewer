@@ -12,8 +12,11 @@ import edu.stanford.graphics.shapenet.jme3.loaders.LoadFormat
 class ViewerConfig(config: Config) extends ConfigManager(config) {
   val defaultModelId = getString("viewer.defaultModelId", "3dw.111cb08c8121b8411749672386e0b711")
   val shapeNetCoreDir = getString("viewer.shapeNetCoreDir")
-  val width = Option(getIntOption("viewer.width").getOrElse(1024))
-  val height = Option(getIntOption("viewer.height").getOrElse(768))
+  //val width = Option(getIntOption("viewer.width").getOrElse(1024))
+  //val height = Option(getIntOption("viewer.height").getOrElse(768))
+  val width = Option(getIntOption("viewer.width").getOrElse(640))
+  val height = Option(getIntOption("viewer.height").getOrElse(480))
+
   val showSettings = getBoolean("viewer.showSettings", false)
   val cacheWebFiles = getBoolean("viewer.cacheWebFiles", true)
 

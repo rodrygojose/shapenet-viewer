@@ -24,6 +24,7 @@ trait Constants {
   val DATA_DIR = ensureDir(prop("DATA_DIR", HOME_DIR + "data" + File.separator))
   val CODE_DIR = ensureDir(prop("CODE_DIR", HOME_DIR + "code" + File.separator))
   val WORK_DIR = ensureDir(prop("WORK_DIR", HOME_DIR + "work" + File.separator))
+  //val WORK_DIR = "/run/media/rortizca/RODRYUSB-8G/";
   val TEST_DIR = ensureDir(prop("TEST_DIR", WORK_DIR + "test" + File.separator))
   val LOG_DIR = ensureDir(prop("LOG_DIR", WORK_DIR + "log" + File.separator))
   val CACHE_DIR = ensureDir(prop("CACHE_DIR", WORK_DIR + "cache" + File.separator))
@@ -44,7 +45,8 @@ trait Constants {
   val separator = if (USE_LOCAL_DATA) File.separator else "/"
 
   val SHAPENET_SYNSETS_SOLR_URL = SHAPENET_HOST + "/shapenet-synsets/solr"
-  val WORK_SCREENSHOTS_DIR = WORK_DIR + "screenshots" + File.separator
+//  val WORK_SCREENSHOTS_DIR = WORK_DIR + "screenshots" + File.separator
+  val WORK_SCREENSHOTS_DIR = "/run/media/rortizca/HD_Dell/rodrigo/ShapeNet_data/shapenet-renders/screenshots/"
 
   // Some arbitrary constants for screen width and height
   var screenWidth: Int = 600
